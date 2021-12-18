@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <script type="text/javascript" src="code.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="emojionearea.css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="emojionearea.js"></script>
+    
+
+    <title>MyGoals</title>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="container">
+       <div class="header__inner">
+         <div class="header__logo">MG</div> 
+
+          <nav class="nav">
+            <a class="nav__link" href="#calendar">Calendar</a>
+            <a class="nav__link" href="#goals">Goals</a>
+            <a class="nav__link" href="#">Grafics</a>
+          </nav>
+
+       </div>
+     </div>
+    </header>
+
+    <div class="doit">Just do it</div>
+
+    <div class="intro">
+      <div class="container">
+        <div class=" intro__inner">
+         <h1 class="intro__title">Become who you are </h1> 
+         <h2 class="intro__subtitle">but make yourself better</h2>
+
+         <a class="btn" href="#calendar">Let's Go</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <section class="section"> 
+      <div class="container">
+    
+        <div class="calendar__header">
+          <h3 class="currYear"></h3>
+          <h2 class="currMonth"></h2>
+        </div>
+          <div class="calendar-table" id="calendar">
+            <table class="table">
+            <caption class="currDay">Today</caption>
+
+
+              <div class="doit">Just do it</div>
+             
+              <tr class ="days">
+               <th>Sunday</th> 
+               <th>Monday</th>
+               <th>Tuesday</th>
+               <th>Wednesday</th>
+               <th>Thursday</th>
+               <th>Friday</th>
+               <th>Saturday</th>
+              </tr>
+            </table>
+          </div>
+          <script type="text/javascript" src="code.js"></script>
+          <script type="text/javascript">console.log(createTable())</script>
+               
+
+    <div class="controls">
+      <div class="container_1">
+        <select class="chosen-color" name="chosen-color">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="grey">Grey</option>
+          <option value="pink">Pink</option>
+          <option value="red">Red</option>
+          <option value="darkorange">Orange</option>
+          <option value="saddlebrown">Brown</option>
+          <option value="yellow">Yellow</option>
+          <option value="greenyellow">GreenYellow</option>
+          <option value="forestgreen">Green</option>
+          <option value="aquamarine">Aquamarine</option>
+          <option value="lightskyblue">LightBlue</option>
+          <option value="lightsteelblue">Grey-Blue</option>
+          <option value="darkblue">DarkBlue</option>
+          <option value="indigo">Indigo</option>
+          <option value="mediumpurple">MediumPurple</option>
+          <option value="purple">Purple</option>
+        </select>
+        <input class="eraser visually-hidden" id="eraser-mode" type="checkbox" name="eraser">
+        <label class="eraser-label" for="eraser-mode">Eraser</label>
+      </div>
+
+
+      </div>
+    </section> 
+
+    <div class="star">
+      <div class="container">
+        <div class=" star__inner">
+
+          <section class="section_rad" id="goals">
+         
+            <div class="container_3">
+            <input type="checkbox" name="cod" class="task-1">
+            </div>
+            <div class="container_4">
+            <input type="checkbox" name="eng" class="task-2">
+            </div>
+            <div class="container_5">
+            <input type="checkbox" name="shp" class="task-3">
+            </div>
+          </section> 
+
+
+            <section class="comment-feed container">
+          <h2>My Goals</h2>
+          <ol class="comment-list">
+            <li class="user-comment">Never lazy</li>
+          </ol>
+          <form action="https://echo.htmlacademy.ru/courses" method="post" class="comment-form">
+            <div class="comment-inner">
+              <label class="comment-label" for="comment-input">Next</label>
+              <input type="text" class="comment-field" placeholder="Love youself and become who you are" required id="comment-input">
+
+              <script type="text/javascript">
+               $(document).ready(function() {
+               $("#comment-input").emojioneArea();
+               });
+             </script>
+
+            </div>
+            <button class="btn" type="submit">Do it</button>
+          </form>
+        </section>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
